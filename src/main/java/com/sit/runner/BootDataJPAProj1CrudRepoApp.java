@@ -2,11 +2,6 @@ package com.sit.runner;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.AutoConfigureOrder;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.stereotype.Component;
 
 import com.sit.Service.IDoctorService;
@@ -21,17 +16,17 @@ public class BootDataJPAProj1CrudRepoApp implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		try {
-			Doctor doc=new Doctor();
+			Doctor doc = new Doctor();
 			doc.setDocName("sairam");
 			doc.setSpecialization("MD_Cardio");
 			doc.setIncome(90000.00);
 
-			String Result=service.registerDoctor(doc);
-			System.out.println(Result);
+			String result = service.registerDoctor(doc);
+			System.out.println(result);
 
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-		catch(Exception e) {e.printStackTrace();}
-
 	}
 
 }

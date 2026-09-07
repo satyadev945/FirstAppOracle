@@ -35,25 +35,13 @@
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
+		<!-- PostgreSQL JDBC Driver -->
 		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.oracle.database.jdbc</groupId>
-			<artifactId>ojdbc11</artifactId>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
 		<!-- MySQL Connector Dependency - updated to com.mysql:mysql-connector-j for Spring Boot 3.x / Java 17 compatibility -->
 		<!-- Updated version from 8.0.33 to 8.2.0 for better Java 17 support -->
 		<dependency>

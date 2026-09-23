@@ -4,6 +4,11 @@ import org.springframework.data.repository.CrudRepository;
 
 import com.sit.entity.Doctor;
 
-public interface IDoctorRepo extends CrudRepository<Doctor,Integer>{
+/**
+ * Repository interface for Doctor entity CRUD operations.
+ * Extends CrudRepository for standard data access operations.
+ * Compatible with Spring Data JPA and Java 25.
+ */
+public interface IDoctorRepo extends CrudRepository<Doctor, Integer> {
 
 }

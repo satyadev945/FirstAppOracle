@@ -2,9 +2,14 @@ package com.sit.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import com.sit.Repository.IDoctorRepo;
 import com.sit.entity.Doctor;
 
+/**
+ * Implementation of IDoctorService providing doctor management operations.
+ * Updated for Java 25 / Spring Boot 3.x compatibility.
+ */
 @Service("doctorService")
 public class DoctorMgmtServiceImpl implements IDoctorService {
 

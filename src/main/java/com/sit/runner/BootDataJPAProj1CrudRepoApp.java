@@ -14,7 +14,7 @@ public class BootDataJPAProj1CrudRepoApp implements CommandLineRunner {
 	
 	
 	@Override
-	public void run(String... args) throws Exception {
+	public void run(String... args) {
 		try {
 			Doctor doc=new Doctor();
 			doc.setDocName("sairam");

@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 //import org.springframework.context.ApplicationContext;
 //import org.springframework.context.ConfigurableApplicationContext;
-//import com.sit.Service.IDoctorService;
+//import com.sit.service.IDoctorService;
 //import com.sit.entity.Doctor;
 
 @SpringBootApplication
@@ -34,4 +34,3 @@ public class SpringBootDataJpa {
 		//
 	}
 }
-

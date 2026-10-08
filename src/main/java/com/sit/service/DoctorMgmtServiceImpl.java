@@ -1,8 +1,8 @@
-package com.sit.Service;
+package com.sit.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.sit.Repository.IDoctorRepo;
+import com.sit.repository.IDoctorRepo;
 import com.sit.entity.Doctor;
 
 @Service("doctorService")

@@ -16,7 +16,6 @@ public class Doctor {
 
 	@Column(name="DOC_ID")
 	@Id
-	//@GeneratedValue(strategy=GenerationType.AUTO)
 	@SequenceGenerator(name="gen1",sequenceName="CNO_SEQ",initialValue = 203,allocationSize = 1)
 	@GeneratedValue(generator ="gen1",strategy = GenerationType.SEQUENCE)
 	private Integer docId;

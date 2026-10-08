@@ -1,4 +1,4 @@
-package com.sit.Service;
+package com.sit.service;
 
 import com.sit.entity.Doctor;
 

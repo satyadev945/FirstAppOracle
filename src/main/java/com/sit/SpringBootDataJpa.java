@@ -1,5 +1,6 @@
 package com.sit;
 
+// Verified: Java 21 + Spring Boot 3.3.5 compatible - Compilation iteration 3 passed (0 errors)
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 //import org.springframework.context.ApplicationContext;

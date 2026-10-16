@@ -1,5 +1,6 @@
 package com.sit.entity;
 
+import java.io.Serializable;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,7 +13,7 @@ import lombok.Data;
 @Entity
 @Table(name="JPA_DOCTOR_INFO")
 @Data
-public class Doctor {
+public class Doctor implements Serializable {
 
 	@Column(name="DOC_ID")
 	@Id

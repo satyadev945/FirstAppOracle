@@ -1,6 +1,5 @@
 package com.sit.Service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.sit.Repository.IDoctorRepo;
 import com.sit.entity.Doctor;
@@ -8,8 +7,11 @@ import com.sit.entity.Doctor;
 @Service("doctorService")
 public class DoctorMgmtServiceImpl implements IDoctorService {
 
-    @Autowired
-    private IDoctorRepo doctorRepo;
+    private final IDoctorRepo doctorRepo;
+
+    public DoctorMgmtServiceImpl(IDoctorRepo doctorRepo) {
+        this.doctorRepo = doctorRepo;
+    }
 
     @Override
     public String registerDoctor(Doctor doctor) {

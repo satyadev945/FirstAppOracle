@@ -7,11 +7,15 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 @Entity
 @Table(name="JPA_DOCTOR_INFO")
-@Data
+@Getter
+@Setter
+@ToString
 public class Doctor {
 
 	@Column(name="DOC_ID")
@@ -30,4 +34,15 @@ public class Doctor {
 	@Column(name="INCOME")
 	private Double income;
 	
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof Doctor other)) return false;
+		return docId != null && docId.equals(other.docId);
+	}
+
+	@Override
+	public int hashCode() {
+		return getClass().hashCode();
+	}
 }
